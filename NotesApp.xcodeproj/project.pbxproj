@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4881ED9292CFC5D0018C2A1 /* KeyboardState in Frameworks */ = {isa = PBXBuildFile; productRef = F4881ED8292CFC5D0018C2A1 /* KeyboardState */; };
+		F4881EDC292D0E5C0018C2A1 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = F4881EDB292D0E5C0018C2A1 /* TextView */; };
+		F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B40292AA1AD0002AF6A /* FelixFelicis */; };
+		F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B46292AA5750002AF6A /* PlatformSpecificValue */; };
+		F4C11B49292AA6140002AF6A /* NewNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11B48292AA6140002AF6A /* NewNoteButton.swift */; };
+		F4EB77BC2926644C00AE7A88 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BB2926644C00AE7A88 /* NotesApp.swift */; };
+		F4EB77BE2926644C00AE7A88 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BD2926644C00AE7A88 /* Persistence.swift */; };
+		F4EB77C12926644C00AE7A88 /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BF2926644C00AE7A88 /* NotesApp.xcdatamodeld */; };
+		F4EB77C32926644C00AE7A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77C22926644C00AE7A88 /* ContentView.swift */; };
+		F4EB77C52926644E00AE7A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EB77C42926644E00AE7A88 /* Assets.xcassets */; };
+		F4EB77D52926659400AE7A88 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77D42926659400AE7A88 /* SidebarView.swift */; };
+		F4EB77DB2926660600AE7A88 /* NoteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77DA2926660600AE7A88 /* NoteCommands.swift */; };
+		F4EB77DD2926674000AE7A88 /* SidebarCategoryCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77DC2926674000AE7A88 /* SidebarCategoryCommands.swift */; };
+		F4EB77E0292667E200AE7A88 /* SelectedCategoryBindingFelicisKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77DF292667E200AE7A88 /* SelectedCategoryBindingFelicisKey.swift */; };
+		F4EB77E3292669BA00AE7A88 /* RecentNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77E2292669BA00AE7A88 /* RecentNotes.swift */; };
+		F4EB77E5292669CF00AE7A88 /* FavoriteNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77E4292669CF00AE7A88 /* FavoriteNotes.swift */; };
+		F4EB77E7292669E100AE7A88 /* HiddenNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77E6292669E100AE7A88 /* HiddenNotes.swift */; };
+		F4EB77EB292672B100AE7A88 /* NoteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77EA292672B100AE7A88 /* NoteEditor.swift */; };
+		F4EB77ED2926746300AE7A88 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77EC2926746300AE7A88 /* NotesView.swift */; };
+		F4EB77EF292677EF00AE7A88 /* SelectedNoteBindingFelicisKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77EE292677EF00AE7A88 /* SelectedNoteBindingFelicisKey.swift */; };
+		F4EB77F12926785500AE7A88 /* AddCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77F02926785500AE7A88 /* AddCommands.swift */; };
+		F4EB77F329267B9C00AE7A88 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77F229267B9C00AE7A88 /* NotesList.swift */; };
+		F4EB77F529267CFB00AE7A88 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77F429267CFB00AE7A88 /* NoteView.swift */; };
+		F4EB77F829267DCD00AE7A88 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77F729267DCD00AE7A88 /* Store.swift */; };
+		F4EB77FA29267FF000AE7A88 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77F929267FF000AE7A88 /* NoteRow.swift */; };
+		F4EB77FD2926861E00AE7A88 /* FavoriteNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77FC2926861E00AE7A88 /* FavoriteNoteButton.swift */; };
+		F4EB77FF292686B200AE7A88 /* HideNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77FE292686B200AE7A88 /* HideNoteButton.swift */; };
+		F4EB78012926870200AE7A88 /* DeleteNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB78002926870200AE7A88 /* DeleteNoteButton.swift */; };
+		F4FDE6E32926A33D007B3030 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE6E22926A33D007B3030 /* Note.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4C11B48292AA6140002AF6A /* NewNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteButton.swift; sourceTree = "<group>"; };
+		F4EB77B82926644C00AE7A88 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EB77BB2926644C00AE7A88 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
+		F4EB77BD2926644C00AE7A88 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F4EB77C02926644C00AE7A88 /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
+		F4EB77C22926644C00AE7A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4EB77C42926644E00AE7A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4EB77C62926644E00AE7A88 /* NotesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotesApp.entitlements; sourceTree = "<group>"; };
+		F4EB77D42926659400AE7A88 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		F4EB77DA2926660600AE7A88 /* NoteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCommands.swift; sourceTree = "<group>"; };
+		F4EB77DC2926674000AE7A88 /* SidebarCategoryCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarCategoryCommands.swift; sourceTree = "<group>"; };
+		F4EB77DF292667E200AE7A88 /* SelectedCategoryBindingFelicisKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryBindingFelicisKey.swift; sourceTree = "<group>"; };
+		F4EB77E2292669BA00AE7A88 /* RecentNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentNotes.swift; sourceTree = "<group>"; };
+		F4EB77E4292669CF00AE7A88 /* FavoriteNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNotes.swift; sourceTree = "<group>"; };
+		F4EB77E6292669E100AE7A88 /* HiddenNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenNotes.swift; sourceTree = "<group>"; };
+		F4EB77EA292672B100AE7A88 /* NoteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditor.swift; sourceTree = "<group>"; };
+		F4EB77EC2926746300AE7A88 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		F4EB77EE292677EF00AE7A88 /* SelectedNoteBindingFelicisKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNoteBindingFelicisKey.swift; sourceTree = "<group>"; };
+		F4EB77F02926785500AE7A88 /* AddCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommands.swift; sourceTree = "<group>"; };
+		F4EB77F229267B9C00AE7A88 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
+		F4EB77F429267CFB00AE7A88 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		F4EB77F729267DCD00AE7A88 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F4EB77F929267FF000AE7A88 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		F4EB77FC2926861E00AE7A88 /* FavoriteNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNoteButton.swift; sourceTree = "<group>"; };
+		F4EB77FE292686B200AE7A88 /* HideNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNoteButton.swift; sourceTree = "<group>"; };
+		F4EB78002926870200AE7A88 /* DeleteNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteButton.swift; sourceTree = "<group>"; };
+		F4FDE6E22926A33D007B3030 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4EB77B52926644C00AE7A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4881EDC292D0E5C0018C2A1 /* TextView in Frameworks */,
+				F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */,
+				F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */,
+				F4881ED9292CFC5D0018C2A1 /* KeyboardState in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F47F9C27292BBA4A005108FE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F4EB77AF2926644C00AE7A88 = {
+			isa = PBXGroup;
+			children = (
+				F47F9C27292BBA4A005108FE /* Packages */,
+				F4EB77BA2926644C00AE7A88 /* NotesApp */,
+				F4EB77B92926644C00AE7A88 /* Products */,
+				F4FDE6DF2926906D007B3030 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4EB77B92926644C00AE7A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77B82926644C00AE7A88 /* NotesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4EB77BA2926644C00AE7A88 /* NotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77F629267DC300AE7A88 /* Store */,
+				F4EB77E1292669B100AE7A88 /* Notes */,
+				F4EB77DE292667B600AE7A88 /* Felicis */,
+				F4EB77D32926657D00AE7A88 /* Navigation */,
+				F4EB77D2292664F800AE7A88 /* Commands */,
+				F4EB780329268BE000AE7A88 /* Resources */,
+				F4EB77BB2926644C00AE7A88 /* NotesApp.swift */,
+				F4EB77C62926644E00AE7A88 /* NotesApp.entitlements */,
+			);
+			path = NotesApp;
+			sourceTree = "<group>";
+		};
+		F4EB77D2292664F800AE7A88 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77F02926785500AE7A88 /* AddCommands.swift */,
+				F4EB77DA2926660600AE7A88 /* NoteCommands.swift */,
+				F4EB77DC2926674000AE7A88 /* SidebarCategoryCommands.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		F4EB77D32926657D00AE7A88 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77C22926644C00AE7A88 /* ContentView.swift */,
+				F4EB77D42926659400AE7A88 /* SidebarView.swift */,
+				F4EB77EC2926746300AE7A88 /* NotesView.swift */,
+				F4EB77F429267CFB00AE7A88 /* NoteView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F4EB77DE292667B600AE7A88 /* Felicis */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77DF292667E200AE7A88 /* SelectedCategoryBindingFelicisKey.swift */,
+				F4EB77EE292677EF00AE7A88 /* SelectedNoteBindingFelicisKey.swift */,
+			);
+			path = Felicis;
+			sourceTree = "<group>";
+		};
+		F4EB77E1292669B100AE7A88 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77FB2926861000AE7A88 /* Buttons */,
+				F4EB77E2292669BA00AE7A88 /* RecentNotes.swift */,
+				F4EB77E4292669CF00AE7A88 /* FavoriteNotes.swift */,
+				F4EB77E6292669E100AE7A88 /* HiddenNotes.swift */,
+				F4EB77F229267B9C00AE7A88 /* NotesList.swift */,
+				F4EB77F929267FF000AE7A88 /* NoteRow.swift */,
+				F4EB77EA292672B100AE7A88 /* NoteEditor.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		F4EB77F629267DC300AE7A88 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDE6E22926A33D007B3030 /* Note.swift */,
+				F4EB77F729267DCD00AE7A88 /* Store.swift */,
+				F4EB77BD2926644C00AE7A88 /* Persistence.swift */,
+				F4EB77BF2926644C00AE7A88 /* NotesApp.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F4EB77FB2926861000AE7A88 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77FC2926861E00AE7A88 /* FavoriteNoteButton.swift */,
+				F4EB77FE292686B200AE7A88 /* HideNoteButton.swift */,
+				F4C11B48292AA6140002AF6A /* NewNoteButton.swift */,
+				F4EB78002926870200AE7A88 /* DeleteNoteButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F4EB780329268BE000AE7A88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB77C42926644E00AE7A88 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4FDE6DF2926906D007B3030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4EB77B72926644C00AE7A88 /* NotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4EB77CC2926644E00AE7A88 /* Build configuration list for PBXNativeTarget "NotesApp" */;
+			buildPhases = (
+				F4EB77B42926644C00AE7A88 /* Sources */,
+				F4EB77B52926644C00AE7A88 /* Frameworks */,
+				F4EB77B62926644C00AE7A88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotesApp;
+			packageProductDependencies = (
+				F4C11B40292AA1AD0002AF6A /* FelixFelicis */,
+				F4C11B46292AA5750002AF6A /* PlatformSpecificValue */,
+				F4881ED8292CFC5D0018C2A1 /* KeyboardState */,
+				F4881EDB292D0E5C0018C2A1 /* TextView */,
+			);
+			productName = NotesApp;
+			productReference = F4EB77B82926644C00AE7A88 /* NotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4EB77B02926644C00AE7A88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F4EB77B72926644C00AE7A88 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = F4EB77B32926644C00AE7A88 /* Build configuration list for PBXProject "NotesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4EB77AF2926644C00AE7A88;
+			packageReferences = (
+				F4C11B3F292AA1AD0002AF6A /* XCRemoteSwiftPackageReference "FelixFelicis" */,
+				F4C11B45292AA5750002AF6A /* XCRemoteSwiftPackageReference "PlatformSpecificValue" */,
+				F4881ED7292CFC5D0018C2A1 /* XCRemoteSwiftPackageReference "KeyboardState" */,
+				F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */,
+			);
+			productRefGroup = F4EB77B92926644C00AE7A88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4EB77B72926644C00AE7A88 /* NotesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4EB77B62926644C00AE7A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EB77C52926644E00AE7A88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4EB77B42926644C00AE7A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EB77DB2926660600AE7A88 /* NoteCommands.swift in Sources */,
+				F4EB77DD2926674000AE7A88 /* SidebarCategoryCommands.swift in Sources */,
+				F4FDE6E32926A33D007B3030 /* Note.swift in Sources */,
+				F4EB77C12926644C00AE7A88 /* NotesApp.xcdatamodeld in Sources */,
+				F4EB77F829267DCD00AE7A88 /* Store.swift in Sources */,
+				F4EB77BC2926644C00AE7A88 /* NotesApp.swift in Sources */,
+				F4EB77E7292669E100AE7A88 /* HiddenNotes.swift in Sources */,
+				F4EB77D52926659400AE7A88 /* SidebarView.swift in Sources */,
+				F4EB77EF292677EF00AE7A88 /* SelectedNoteBindingFelicisKey.swift in Sources */,
+				F4C11B49292AA6140002AF6A /* NewNoteButton.swift in Sources */,
+				F4EB77C32926644C00AE7A88 /* ContentView.swift in Sources */,
+				F4EB77FD2926861E00AE7A88 /* FavoriteNoteButton.swift in Sources */,
+				F4EB78012926870200AE7A88 /* DeleteNoteButton.swift in Sources */,
+				F4EB77E0292667E200AE7A88 /* SelectedCategoryBindingFelicisKey.swift in Sources */,
+				F4EB77FF292686B200AE7A88 /* HideNoteButton.swift in Sources */,
+				F4EB77E3292669BA00AE7A88 /* RecentNotes.swift in Sources */,
+				F4EB77ED2926746300AE7A88 /* NotesView.swift in Sources */,
+				F4EB77FA29267FF000AE7A88 /* NoteRow.swift in Sources */,
+				F4EB77F12926785500AE7A88 /* AddCommands.swift in Sources */,
+				F4EB77F529267CFB00AE7A88 /* NoteView.swift in Sources */,
+				F4EB77BE2926644C00AE7A88 /* Persistence.swift in Sources */,
+				F4EB77E5292669CF00AE7A88 /* FavoriteNotes.swift in Sources */,
+				F4EB77EB292672B100AE7A88 /* NoteEditor.swift in Sources */,
+				F4EB77F329267B9C00AE7A88 /* NotesList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4EB77CA2926644E00AE7A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4EB77CB2926644E00AE7A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F4EB77CD2926644E00AE7A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotesApp/NotesApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94GE8DY2EJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmkskn.NotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4EB77CE2926644E00AE7A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotesApp/NotesApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94GE8DY2EJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmkskn.NotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4EB77B32926644C00AE7A88 /* Build configuration list for PBXProject "NotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EB77CA2926644E00AE7A88 /* Debug */,
+				F4EB77CB2926644E00AE7A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4EB77CC2926644E00AE7A88 /* Build configuration list for PBXNativeTarget "NotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EB77CD2926644E00AE7A88 /* Debug */,
+				F4EB77CE2926644E00AE7A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4881ED7292CFC5D0018C2A1 /* XCRemoteSwiftPackageReference "KeyboardState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/KeyboardState";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/TextView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F4C11B3F292AA1AD0002AF6A /* XCRemoteSwiftPackageReference "FelixFelicis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/FelixFelicis";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F4C11B45292AA5750002AF6A /* XCRemoteSwiftPackageReference "PlatformSpecificValue" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/PlatformSpecificValue";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4881ED8292CFC5D0018C2A1 /* KeyboardState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4881ED7292CFC5D0018C2A1 /* XCRemoteSwiftPackageReference "KeyboardState" */;
+			productName = KeyboardState;
+		};
+		F4881EDB292D0E5C0018C2A1 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
+		F4C11B40292AA1AD0002AF6A /* FelixFelicis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C11B3F292AA1AD0002AF6A /* XCRemoteSwiftPackageReference "FelixFelicis" */;
+			productName = FelixFelicis;
+		};
+		F4C11B46292AA5750002AF6A /* PlatformSpecificValue */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C11B45292AA5750002AF6A /* XCRemoteSwiftPackageReference "PlatformSpecificValue" */;
+			productName = PlatformSpecificValue;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F4EB77BF2926644C00AE7A88 /* NotesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4EB77C02926644C00AE7A88 /* NotesApp.xcdatamodel */,
+			);
+			currentVersion = F4EB77C02926644C00AE7A88 /* NotesApp.xcdatamodel */;
+			path = NotesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4EB77B02926644C00AE7A88 /* Project object */;
+}

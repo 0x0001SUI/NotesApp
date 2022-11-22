@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "felixfelicis",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/FelixFelicis",
+      "state" : {
+        "revision" : "b55eac95818ed7e7e7eed6105916fc506c211e95",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "keyboardstate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/KeyboardState",
+      "state" : {
+        "revision" : "2450110f63b820e4656619dc12b9ac0af4630224",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "platformspecificvalue",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/PlatformSpecificValue",
+      "state" : {
+        "revision" : "d601d8947edc406c1fadd22957e77e0eb05f101f",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "textview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/TextView",
+      "state" : {
+        "revision" : "d7ca268cea54540f6ad79dba78b6fb8a1e13d323",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
