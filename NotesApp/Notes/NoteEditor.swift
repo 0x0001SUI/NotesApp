@@ -34,6 +34,7 @@ struct NoteEditor: View {
                 // style the note editor (see extension lower)
                 .textViewNoteEditorStyles()
             
+            #if os(macOS)
             if let date = note.formattedModificationDate {
                 HStack {
                     Spacer()
@@ -46,6 +47,7 @@ struct NoteEditor: View {
                 .background(.bar)
                 .divider(at: .top)
             }
+            #endif
         }
         // ignore the bottom safe area
         .ignoresSafeArea(.container, edges: .bottom)
