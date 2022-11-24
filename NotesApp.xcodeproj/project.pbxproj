@@ -13,6 +13,7 @@
 		F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B46292AA5750002AF6A /* PlatformSpecificValue */; };
 		F4C11B49292AA6140002AF6A /* NewNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11B48292AA6140002AF6A /* NewNoteButton.swift */; };
 		F4D816A9292FCFB700839D1D /* Dividers in Frameworks */ = {isa = PBXBuildFile; productRef = F4D816A8292FCFB700839D1D /* Dividers */; };
+		F4D816AD292FD27300839D1D /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F4D816AC292FD27300839D1D /* Localizable.stringsdict */; };
 		F4EB77BC2926644C00AE7A88 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BB2926644C00AE7A88 /* NotesApp.swift */; };
 		F4EB77BE2926644C00AE7A88 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BD2926644C00AE7A88 /* Persistence.swift */; };
 		F4EB77C12926644C00AE7A88 /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BF2926644C00AE7A88 /* NotesApp.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		F4C11B48292AA6140002AF6A /* NewNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteButton.swift; sourceTree = "<group>"; };
+		F4D816AC292FD27300839D1D /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		F4EB77B82926644C00AE7A88 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EB77BB2926644C00AE7A88 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		F4EB77BD2926644C00AE7A88 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		F4EB780329268BE000AE7A88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4D816AC292FD27300839D1D /* Localizable.stringsdict */,
 				F4EB77C42926644E00AE7A88 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EB77C52926644E00AE7A88 /* Assets.xcassets in Resources */,
+				F4D816AD292FD27300839D1D /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
