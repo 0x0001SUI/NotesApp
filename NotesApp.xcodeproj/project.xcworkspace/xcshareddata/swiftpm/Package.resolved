@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "dividers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/Dividers",
+      "state" : {
+        "revision" : "c921c17ec9935c59b7a3a1239bc35ced516727b1",
+        "version" : "1.1.0"
+      }
+    },
+    {
       "identity" : "felixfelicis",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0x0001SUI/FelixFelicis",

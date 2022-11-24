@@ -23,7 +23,11 @@ extension Note {
     }
     
     var formattedCreationDate: String? {
-        self.creationDate?.formatted(date: .abbreviated, time: .shortened)
+        self.creationDate?.formatted(date: .long, time: .shortened)
+    }
+    
+    var formattedModificationDate: String? {
+        self.modificationDate?.formatted(date: .long, time: .shortened)
     }
 }
 

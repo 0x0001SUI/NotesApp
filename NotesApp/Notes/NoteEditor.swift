@@ -7,6 +7,7 @@
 
 import SwiftUI
 import TextView
+import Dividers
 #if os(iOS)
 import KeyboardState
 #endif
@@ -24,32 +25,51 @@ struct NoteEditor: View {
     #endif
     
     var body: some View {
-        TextView(text: note.textBinding)
-            // keep track of the focus state (so you can hide the keyboard later)
-            .focused($isFocused)
+        VStack(spacing: .zero) {
+            TextView(text: note.textBinding)
+                
+                // keep track of the focus state (so you can hide the keyboard later)
+                .focused($isFocused)
+                
+                // style the note editor (see extension lower)
+                .textViewNoteEditorStyles()
             
-            // force redraw on note change.
-            .id(note.uuid)
-            
-            // style the note editor (see extension lower)
-            .textViewNoteEditorStyles()
-            
-            // ignore the bottom safe area
-            .ignoresSafeArea(.container, edges: .bottom)
-            
-            // push note to the global key window environment
-            .felicisObject(note)
-            
-            // update note when text changes
-            .task(id: note.safeText, saveChanges)
-            
-            #if os(iOS)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    hideKeyboardButton
+            if let date = note.formattedModificationDate {
+                HStack {
+                    Spacer()
+                    
+                    Text("Last modified on \(date)")
+                        .foregroundStyle(.secondary)
+                        .font(.caption)
                 }
+                .padding(pockedPadding)
+                .background(.bar)
+                .divider(at: .top)
             }
-            #endif
+        }
+        // ignore the bottom safe area
+        .ignoresSafeArea(.container, edges: .bottom)
+
+        // force redraw on note change.
+        .id(note.uuid)
+
+        // push note to the global key window environment
+        .felicisObject(note)
+        
+        // update note when text changes
+        .task(id: note.safeText, saveChanges)
+    
+        #if os(iOS)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                hideKeyboardButton
+            }
+        }
+        #endif
+    }
+    
+    private var pockedPadding: EdgeInsets {
+        EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15)
     }
     
     #if os(iOS)
