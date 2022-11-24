@@ -26,6 +26,10 @@ extension Note {
         self.creationDate?.formatted(date: .long, time: .shortened)
     }
     
+    var accessibleFormattedCreationDate: String? {
+        self.creationDate?.formatted(date: .numeric, time: .shortened)
+    }
+    
     var formattedModificationDate: String? {
         self.modificationDate?.formatted(date: .long, time: .shortened)
     }

@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "scaledvalues",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/ScaledValues",
+      "state" : {
+        "revision" : "bcc568004113453d6e84735e600a272c2c734582",
+        "version" : "1.3.0"
+      }
+    },
+    {
       "identity" : "textview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0x0001SUI/TextView",

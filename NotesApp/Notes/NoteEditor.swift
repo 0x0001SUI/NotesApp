@@ -8,6 +8,8 @@
 import SwiftUI
 import TextView
 import Dividers
+import ScaledValues
+import PlatformSpecificValue
 #if os(iOS)
 import KeyboardState
 #endif
@@ -19,6 +21,9 @@ struct NoteEditor: View {
     @ObservedObject var note: Note
                 
     @FocusState private var isFocused: Bool
+    
+    @ScaledPointSize(relativeTo: .body)
+    private var textFontStyle = platformSpecific(.macOS(13.0), .iOS(18.0))
     
     #if os(iOS)
     @KeyboardState private var keyboardState
@@ -32,7 +37,13 @@ struct NoteEditor: View {
                 .focused($isFocused)
                 
                 // style the note editor (see extension lower)
-                .textViewNoteEditorStyles()
+                .background()
+                .lineSpacing(5)
+                .textViewSpellCheckingDisabled()
+                .textViewKeyboardDismissMode(.immediately)
+                .textViewDataDetector([.data])
+                .textViewFont(.system(size: textFontStyle, weight: .regular, design: .default))
+
             
             #if os(macOS)
             if let date = note.formattedModificationDate {
@@ -101,18 +112,5 @@ struct NoteEditor: View {
         store.perform(saveChanges: true) {
             note.modificationDate = .now
         }
-    }
-}
-
-
-fileprivate extension View {
-    func textViewNoteEditorStyles() -> some View {
-        self
-            .background()
-            .lineSpacing(5)
-            .textViewSpellCheckingDisabled()
-            .textViewKeyboardDismissMode(.immediately)
-            .textViewDataDetector([.data])
-            .textViewFont(.system(textStyle: .body, weight: .regular, design: .default))
     }
 }

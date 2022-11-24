@@ -12,6 +12,7 @@
 		F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B40292AA1AD0002AF6A /* FelixFelicis */; };
 		F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B46292AA5750002AF6A /* PlatformSpecificValue */; };
 		F4C11B49292AA6140002AF6A /* NewNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11B48292AA6140002AF6A /* NewNoteButton.swift */; };
+		F4C30E3C292FD5BC00683E8F /* ScaledValues in Frameworks */ = {isa = PBXBuildFile; productRef = F4C30E3B292FD5BC00683E8F /* ScaledValues */; };
 		F4D816A9292FCFB700839D1D /* Dividers in Frameworks */ = {isa = PBXBuildFile; productRef = F4D816A8292FCFB700839D1D /* Dividers */; };
 		F4D816AD292FD27300839D1D /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F4D816AC292FD27300839D1D /* Localizable.stringsdict */; };
 		F4EB77BC2926644C00AE7A88 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB77BB2926644C00AE7A88 /* NotesApp.swift */; };
@@ -80,6 +81,7 @@
 				F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */,
 				F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */,
 				F4D816A9292FCFB700839D1D /* Dividers in Frameworks */,
+				F4C30E3C292FD5BC00683E8F /* ScaledValues in Frameworks */,
 				F4881ED9292CFC5D0018C2A1 /* KeyboardState in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +233,7 @@
 				F4881ED8292CFC5D0018C2A1 /* KeyboardState */,
 				F4881EDB292D0E5C0018C2A1 /* TextView */,
 				F4D816A8292FCFB700839D1D /* Dividers */,
+				F4C30E3B292FD5BC00683E8F /* ScaledValues */,
 			);
 			productName = NotesApp;
 			productReference = F4EB77B82926644C00AE7A88 /* NotesApp.app */;
@@ -266,6 +269,7 @@
 				F4881ED7292CFC5D0018C2A1 /* XCRemoteSwiftPackageReference "KeyboardState" */,
 				F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */,
 				F4D816A7292FCFB700839D1D /* XCRemoteSwiftPackageReference "Dividers" */,
+				F4C30E3A292FD5BC00683E8F /* XCRemoteSwiftPackageReference "ScaledValues" */,
 			);
 			productRefGroup = F4EB77B92926644C00AE7A88 /* Products */;
 			projectDirPath = "";
@@ -562,6 +566,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		F4C30E3A292FD5BC00683E8F /* XCRemoteSwiftPackageReference "ScaledValues" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/ScaledValues";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 		F4D816A7292FCFB700839D1D /* XCRemoteSwiftPackageReference "Dividers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0x0001SUI/Dividers";
@@ -592,6 +604,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4C11B45292AA5750002AF6A /* XCRemoteSwiftPackageReference "PlatformSpecificValue" */;
 			productName = PlatformSpecificValue;
+		};
+		F4C30E3B292FD5BC00683E8F /* ScaledValues */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C30E3A292FD5BC00683E8F /* XCRemoteSwiftPackageReference "ScaledValues" */;
+			productName = ScaledValues;
 		};
 		F4D816A8292FCFB700839D1D /* Dividers */ = {
 			isa = XCSwiftPackageProductDependency;

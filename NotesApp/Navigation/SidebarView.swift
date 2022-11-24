@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScaledValues
 
 
 #if os(macOS)
@@ -16,27 +17,51 @@ typealias CategoryType = Category?
 
 
 struct SidebarView: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
     @Binding var selection: CategoryType
-    
+        
     var body: some View {
         List(selection: $selection) {
-            Section("Library") {
+            Section {
                 NavigationLink(value: Category.recents) {
-                    Label("Recents", systemImage: "clock")
+                    rowLabel("Recents", systemImage: "clock")
                 }
                 
                 NavigationLink(value: Category.favorites) {
-                    Label("Favorites", systemImage: "heart")
+                    rowLabel("Favorites", systemImage: "heart")
                 }
                 
                 NavigationLink(value: Category.hidden) {
-                    Label("Hidden", systemImage: "eye.slash")
+                    rowLabel("Hidden", systemImage: "eye.slash")
                 }
             }
             .headerProminence(.increased)
+            #if os(iOS)
+            .listRowInsets(rowInsets)
+            #endif
         }
+        #if os(iOS)
+        .listStyle(.insetGrouped)
         .navigationTitle("Notes")
+        #endif
     }
+    
+    private func rowLabel(_ title: LocalizedStringKey, systemImage: String) -> some View {
+        ViewThatFits {
+            Label(title, systemImage: systemImage)
+            Text(title)
+        }
+        .lineLimit(1)
+        #if os(iOS)
+        .padding(rowPadding)
+        #endif
+    }
+    
+    #if os(iOS)
+    @ScaledInsets private var rowInsets = EdgeInsets(top: 6.5, leading: 15, bottom: 6.5, trailing: 15)
+    @ScaledInsets private var rowPadding = EdgeInsets(top: 6.5, leading: 0, bottom: 6.5, trailing: 0)
+    #endif
 }
 
 
