@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "hapticbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0x0001SUI/HapticButton",
+      "state" : {
+        "revision" : "2e46ad0b47fe81792e4efa3f64191cf13d730182",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "keyboardstate",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0x0001SUI/KeyboardState",

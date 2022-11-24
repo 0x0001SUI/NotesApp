@@ -9,6 +9,7 @@ import SwiftUI
 import TextView
 import Dividers
 import ScaledValues
+import HapticButton
 import PlatformSpecificValue
 #if os(iOS)
 import KeyboardState
@@ -96,14 +97,14 @@ struct NoteEditor: View {
     ///
     /// The button is disabled and hidden if the keyboard is currently hidden.
     private var hideKeyboardButton: some View {
-        Button {
+        HapticButton(feedback: .impact(style: .soft)) {
             isFocused = false
         } label: {
             Label("Hide Keyboard", systemImage: "keyboard.chevron.compact.down")
         }
         .disabled(isKeyboardHidden)
         .opacity(isKeyboardHidden ? 0 : 1)
-        .animation(.spring(), value: keyboardState)
+        .animation(.interactiveSpring(), value: keyboardState)
     }
     #endif
     

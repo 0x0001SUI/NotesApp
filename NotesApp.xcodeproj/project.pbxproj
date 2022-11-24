@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4881ED9292CFC5D0018C2A1 /* KeyboardState in Frameworks */ = {isa = PBXBuildFile; productRef = F4881ED8292CFC5D0018C2A1 /* KeyboardState */; };
 		F4881EDC292D0E5C0018C2A1 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = F4881EDB292D0E5C0018C2A1 /* TextView */; };
+		F4940438292FE0B800E19494 /* HapticButton in Frameworks */ = {isa = PBXBuildFile; productRef = F4940437292FE0B800E19494 /* HapticButton */; };
 		F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B40292AA1AD0002AF6A /* FelixFelicis */; };
 		F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */ = {isa = PBXBuildFile; productRef = F4C11B46292AA5750002AF6A /* PlatformSpecificValue */; };
 		F4C11B49292AA6140002AF6A /* NewNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11B48292AA6140002AF6A /* NewNoteButton.swift */; };
@@ -78,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4881EDC292D0E5C0018C2A1 /* TextView in Frameworks */,
+				F4940438292FE0B800E19494 /* HapticButton in Frameworks */,
 				F4C11B41292AA1AD0002AF6A /* FelixFelicis in Frameworks */,
 				F4C11B47292AA5750002AF6A /* PlatformSpecificValue in Frameworks */,
 				F4D816A9292FCFB700839D1D /* Dividers in Frameworks */,
@@ -234,6 +236,7 @@
 				F4881EDB292D0E5C0018C2A1 /* TextView */,
 				F4D816A8292FCFB700839D1D /* Dividers */,
 				F4C30E3B292FD5BC00683E8F /* ScaledValues */,
+				F4940437292FE0B800E19494 /* HapticButton */,
 			);
 			productName = NotesApp;
 			productReference = F4EB77B82926644C00AE7A88 /* NotesApp.app */;
@@ -270,6 +273,7 @@
 				F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */,
 				F4D816A7292FCFB700839D1D /* XCRemoteSwiftPackageReference "Dividers" */,
 				F4C30E3A292FD5BC00683E8F /* XCRemoteSwiftPackageReference "ScaledValues" */,
+				F4940436292FE0B800E19494 /* XCRemoteSwiftPackageReference "HapticButton" */,
 			);
 			productRefGroup = F4EB77B92926644C00AE7A88 /* Products */;
 			projectDirPath = "";
@@ -550,6 +554,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F4940436292FE0B800E19494 /* XCRemoteSwiftPackageReference "HapticButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0x0001SUI/HapticButton";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		F4C11B3F292AA1AD0002AF6A /* XCRemoteSwiftPackageReference "FelixFelicis" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0x0001SUI/FelixFelicis";
@@ -594,6 +606,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */;
 			productName = TextView;
+		};
+		F4940437292FE0B800E19494 /* HapticButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4940436292FE0B800E19494 /* XCRemoteSwiftPackageReference "HapticButton" */;
+			productName = HapticButton;
 		};
 		F4C11B40292AA1AD0002AF6A /* FelixFelicis */ = {
 			isa = XCSwiftPackageProductDependency;
