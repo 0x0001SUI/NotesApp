@@ -88,7 +88,7 @@ struct NoteEditor: View {
     
     #if os(iOS)
     private var isKeyboardHidden: Bool {
-        keyboardState == .hidden
+        keyboardState == .hidden || keyboardState == .hiding
     }
     #endif
     

@@ -542,8 +542,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0x0001SUI/KeyboardState";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
 			};
 		};
 		F4881EDA292D0E5C0018C2A1 /* XCRemoteSwiftPackageReference "TextView" */ = {

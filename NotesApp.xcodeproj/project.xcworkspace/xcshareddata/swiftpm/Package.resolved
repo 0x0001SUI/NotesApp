@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0x0001SUI/KeyboardState",
       "state" : {
-        "revision" : "2450110f63b820e4656619dc12b9ac0af4630224",
-        "version" : "1.0.0"
+        "revision" : "1c10606639166136ec7a8ca5b118ebf33ff1946b",
+        "version" : "1.1.0"
       }
     },
     {
